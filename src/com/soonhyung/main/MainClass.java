@@ -17,7 +17,7 @@ public class MainClass {
 		try {
 			int updCnt = updInningInfo();
 			if(updCnt > 0){
-				int a = 1;
+				logger.info("Áý°è ½ÃÀÛ ......................");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -25,7 +25,7 @@ public class MainClass {
 	}
 	
 	private static int updInningInfo(){
-		logger.info("ìµœì‹ ì •ë³´ ë‹¤ìš´ë¡œë“œ ì¤‘ ......................");
+		logger.info("ÃÖ½ÅÁ¤º¸ ´Ù¿î·Îµå Áß ......................");
 		int returnValue = 0;
 		try {
 			int dbLastInning, realLastInning;
@@ -55,7 +55,7 @@ public class MainClass {
 			e.printStackTrace();
 		}
 
-		logger.info(returnValue + "ê±´ ë‹¤ìš´ë¡œë“œ ì™„ë£Œ");
+		logger.info(returnValue + "°Ç ´Ù¿î·Îµå ¿Ï·á");
 		return returnValue;
 	}
 }
